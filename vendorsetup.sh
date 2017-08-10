@@ -1,0 +1,3 @@
+add_lunch_combo lineage_p9000-user
+add_lunch_combo lineage_p9000-userdebug
+add_lunch_combo lineage_p9000-eng
