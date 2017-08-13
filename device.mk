@@ -19,6 +19,14 @@ $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 MTK_PROJECT_CONFIG ?= device/elephone/p9000/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap \
+    mtkcamera_parameters
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/camera/camerasize.xml:system/etc/camerasize.xml
+
 # Recovery allowed devices
 TARGET_OTA_ASSERT_DEVICE := p9000,P9000,elephone,Elephone,c239v55_dx
 
