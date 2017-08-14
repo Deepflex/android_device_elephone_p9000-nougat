@@ -18,7 +18,7 @@ TARGET_BOARD_PLATFORM := mt6755
 DEVICE_PATH := device/elephone/p9000
 
 # Disable NINJA
-USE_NINJA := false
+#USE_NINJA := false
 
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)

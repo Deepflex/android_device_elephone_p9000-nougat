@@ -21,7 +21,6 @@ include $(MTK_PROJECT_CONFIG)
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     mtkcamera_parameters
 
 PRODUCT_COPY_FILES += \
@@ -70,13 +69,9 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/audio/custom/lib/libaudio_param_parser.so:system/lib/libaudio_param_parser.so \
-    $(LOCAL_PATH)/prebuilt/audio/custom/lib64/libaudio_param_parser.so:system/lib64/libaudio_param_parser.so \
     $(LOCAL_PATH)/prebuilt/camera/custom/lib/libcam.halsensor.so:system/lib/libcam.halsensor.so \
-    $(LOCAL_PATH)/prebuilt/camera/custom/lib/libcam.paramsmgr.so:system/lib/libcam.paramsmgr.so \
     $(LOCAL_PATH)/prebuilt/camera/custom/lib/libsec_mem.so:system/lib/libsec_mem.so \
 	$(LOCAL_PATH)/prebuilt/camera/custom/lib64/libcam.halsensor.so:system/lib64/libcam.halsensor.so \
-    $(LOCAL_PATH)/prebuilt/camera/custom/lib64/libcam.paramsmgr.so:system/lib64/libcam.paramsmgr.so \
     $(LOCAL_PATH)/prebuilt/camera/custom/lib64/libsec_mem.so:system/lib64/libsec_mem.so \
     $(LOCAL_PATH)/prebuilt/camera/marshmallow/lib/libhdrproc.so:system/lib/libhdrproc.so \
     $(LOCAL_PATH)/prebuilt/camera/marshmallow/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
@@ -94,44 +89,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib/libmtkcam_fwkutils.so:system/lib/libmtkcam_fwkutils.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib/librrc.so:system/lib/librrc.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib/libui_ext.so:system/lib/libui_ext.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldcam_imx258_mipi_raw_XL_4033_v0.so:system/lib/lib_agoldcam_imx258_mipi_raw_XL_4033_v0.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldcam_ov8858_mipi_raw_XL_CMB046_v1.so:system/lib/lib_agoldcam_ov8858_mipi_raw_XL_CMB046_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v1.so:system/lib/lib_agoldlens_dw9714af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v2.so:system/lib/lib_agoldlens_dw9714af_v2.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v3.so:system/lib/lib_agoldlens_dw9714af_v3.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v4.so:system/lib/lib_agoldlens_dw9714af_v4.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v5.so:system/lib/lib_agoldlens_dw9714af_v5.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v6.so:system/lib/lib_agoldlens_dw9714af_v6.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9714af_v8.so:system/lib/lib_agoldlens_dw9714af_v8.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9763af_v1.so:system/lib/lib_agoldlens_dw9763af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9763af_v2.so:system/lib/lib_agoldlens_dw9763af_v2.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9800af_v1.so:system/lib/lib_agoldlens_dw9800af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib/lib_agoldlens_dw9800af_v2.so:system/lib/lib_agoldlens_dw9800af_v2.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libbwc.so:system/lib64/libbwc.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libgui_ext.so:system/lib64/libgui_ext.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libm4u.so:system/lib64/libm4u.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libmtkcam_fwkutils.so:system/lib64/libmtkcam_fwkutils.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/librrc.so:system/lib64/librrc.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libui_ext.so:system/lib64/libui_ext.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldcam_imx258_mipi_raw_XL_4033_v0.so:system/lib64/lib_agoldcam_imx258_mipi_raw_XL_4033_v0.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldcam_ov8858_mipi_raw_XL_CMB046_v1.so:system/lib64/lib_agoldcam_ov8858_mipi_raw_XL_CMB046_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v1.so:system/lib64/lib_agoldlens_dw9714af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v2.so:system/lib64/lib_agoldlens_dw9714af_v2.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v3.so:system/lib64/lib_agoldlens_dw9714af_v3.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v4.so:system/lib64/lib_agoldlens_dw9714af_v4.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v5.so:system/lib64/lib_agoldlens_dw9714af_v5.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v6.so:system/lib64/lib_agoldlens_dw9714af_v6.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9714af_v8.so:system/lib64/lib_agoldlens_dw9714af_v8.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9763af_v1.so:system/lib64/lib_agoldlens_dw9763af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9763af_v2.so:system/lib64/lib_agoldlens_dw9763af_v2.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9800af_v1.so:system/lib64/lib_agoldlens_dw9800af_v1.so \
-    $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/lib_agoldlens_dw9800af_v2.so:system/lib64/lib_agoldlens_dw9800af_v2.so \
     $(LOCAL_PATH)/prebuilt/fm/custom/lib/hw/radio.fm.mt6755.so:system/lib/hw/radio.fm.mt6755.so \
-    $(LOCAL_PATH)/prebuilt/fingerprint/custom/bin/etsd:system/bin/etsd \
-    $(LOCAL_PATH)/prebuilt/fingerprint/custom/lib64/libEtsdc.so:system/lib64/libEtsdc.so \
-    $(LOCAL_PATH)/prebuilt/fingerprint/custom/lib64/libFpEts.so:system/lib64/libFpEts.so \
-    $(LOCAL_PATH)/prebuilt/fingerprint/custom/lib64/libFPEtsJni.so:system/lib64/libFPEtsJni.so \
-    $(LOCAL_PATH)/prebuilt/fingerprint/custom/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     $(LOCAL_PATH)/prebuilt/nfc/custom/lib/libmtknfc.so:system/lib/libmtknfc.so \
     $(LOCAL_PATH)/prebuilt/nfc/custom/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so \
     $(LOCAL_PATH)/prebuilt/nfc/custom/lib/hw/nfc_nci.mt6605.default.so:system/lib/hw/nfc_nci.mt6605.default.so \
