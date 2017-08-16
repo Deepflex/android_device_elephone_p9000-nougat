@@ -40,12 +40,13 @@ Front Camera | 8MP (OV)
  * Auto brightness
  * RAM and ROM
  * Rotation
+ * Fast charging
  * All sensors
  * NFC (Payments, pairing)
  * Lazer autofocus
  * Flashlight (Statusbar and Camera)
  * Bluetooth
- * Camera only boot up
+ * Camera (Main/Sub, Focus/Autofocus, Laser autofocus)
  * External SD
  * RIL for SMS/Calls/Internet/Lte on 1 and 2 SIM
  * MTP and Mass Storage mode
@@ -58,9 +59,6 @@ Front Camera | 8MP (OV)
 
 ### In progress:
  * Video recording
- * Pink main camera and green front camera
- * Camera resolutions
- * Focus/Autofocus
  * Media codecs
  * Hdr in camera app
 
